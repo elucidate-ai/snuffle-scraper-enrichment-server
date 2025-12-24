@@ -23,6 +23,7 @@ logging.basicConfig(
 # Silence noisy loggers
 logging.getLogger("azure.core.pipeline.policies.http_logging_policy").setLevel(logging.WARNING)
 logging.getLogger("azure.monitor.opentelemetry.exporter").setLevel(logging.WARNING)
+logging.getLogger("azure.servicebus._pyamqp").setLevel(logging.WARNING)
 logging.getLogger("opentelemetry.instrumentation.requests").setLevel(logging.WARNING)
 logging.getLogger("urllib3.connectionpool").setLevel(logging.WARNING)
 
